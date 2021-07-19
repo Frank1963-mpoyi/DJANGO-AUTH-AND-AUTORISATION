@@ -1,0 +1,39 @@
+{% load static %}
+<!doctype html>
+<html lang="en">
+<head>
+    {% include 'includes/head_style.html' %}
+</head>
+<body>
+    
+    <!-- navbar -->
+    {% include  'includes/navbar.html'  with  brand_name="" %}
+
+
+
+
+    <!-- messages -->
+
+
+
+
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                {% block mainContent %}
+
+                {% endblock mainContent %}
+
+            </div>
+        </div>
+    </div>
+    
+
+
+
+    <!-- footer -->
+
+    <!-- javascript -->
+    {% include 'includes/javascript.html' %}
+</body>
+</html>
